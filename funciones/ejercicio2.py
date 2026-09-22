@@ -1,10 +1,10 @@
 """
-Una empresa importadora desea determinar cuántos dólares puede adquirir con equis cantidad de dinero mexicano.
+Una empresa que contrata personal requiere determinar la edad de las personas que solicitan trabajo, pero cuando se les realiza la entrevista sólo se les pregunta el año en que nacieron.
 
-pesos = float(input("Ingresa la cantidad de pesos mexicanos: "))
-tipo_cambio = float(input("Ingresa el tipo de cambio: "))
+anio_nacimiento = int(input("Ingresa el año de nacimiento: "))
+anio_actual = int(input("Ingresa el año actual: "))
 
-dolares = pesos / tipo_cambio
+edad = anio_actual - anio_nacimiento
 
-print("Puede adquirir", dolares, "dólares")
+print("La edad de la persona es:", edad, "años")
 """
