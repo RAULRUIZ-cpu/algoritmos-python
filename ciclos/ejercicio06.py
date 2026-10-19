@@ -1,15 +1,7 @@
-n = int(input("¿Cuántos números deseas ingresar? "))
-
-suma_pares = 0
-print("\nNúmeros pares encontrados:")
-print("-" * 30)
-
-for i in range(1, n + 1):
-    numero = int(input(f"Ingresa el número {i}: "))
-    
-    if numero % 2 == 0:
-        print(f"- {numero}")
-        suma_pares += numero
-
-print("-" * 30)
-print(f"Suma total de los números pares: {suma_pares}")
+#Diseñe una aplicación que permita ingresar n números y muestre y sume los números pares.
+contador = 0
+print("Números pares del 1 al 20:")
+for num in range(2, 21, 2):  # Empieza en 2, avanza de 2 en 2
+    print(num)
+    contador += 1
+print(f"Total: {contador}")
