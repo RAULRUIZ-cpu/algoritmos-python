@@ -41,7 +41,7 @@ total_ventas = mayor_1000_monto + mayor_500_monto + menor_igual_500_monto
 
 # Mostrar resultados
 print("-" * 50)
-print("📋 RESUMEN DE VENTAS DEL DÍA")
+print("RESUMEN DE VENTAS DEL DÍA")
 print("-" * 50)
 print(f"Ventas mayores a $1000:")
 print(f"  → Cantidad: {mayor_1000_cant} | Monto total: ${mayor_1000_monto:.2f}")
@@ -50,4 +50,4 @@ print(f"  → Cantidad: {mayor_500_cant} | Monto total: ${mayor_500_monto:.2f}")
 print(f"Ventas menores o iguales a $500:")
 print(f"  → Cantidad: {menor_igual_500_cant} | Monto total: ${menor_igual_500_monto:.2f}")
 print("-" * 50)
-print(f"💰 TOTAL VENDIDO EN EL DÍA: ${total_ventas:.2f}")
+print(f" TOTAL VENDIDO EN EL DÍA: ${total_ventas:.2f}")
