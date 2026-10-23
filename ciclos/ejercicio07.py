@@ -1,19 +1,15 @@
 #Un sensor en la puerta de una discoteca registra la edad de 8 personas que intentan entrar. Usa un contador para determinar cuántas personas son menores de edad (menores a 18 años).
 # Pedir cuántos números se van a ingresar
-n = int(input("¿Cuántos números deseas ingresar? "))
+# Inicializamos el contador de menores en 0
+contador_menores = 0
 
-suma_pares = 0
-print("\nNúmeros pares encontrados:")
-print("-" * 30)
+# Lista con las edades de las 8 personas
+edades = [17, 22, 15, 18, 30, 12, 19, 16]
 
-# Recorrer e ingresar cada número
-for i in range(1, n + 1):
-    numero = int(input(f"Ingresa el número {i}: "))
-    
-    # Verificar si es par
-    if numero % 2 == 0:
-        print(f"- {numero}")
-        suma_pares += numero
+# Recorremos cada edad y contamos los menores de 18
+for edad in edades:
+    if edad < 18:
+        contador_menores += 1  # Aumentamos el contador en 1
 
-print("-" * 30)
-print(f"Suma total de los números pares: {suma_pares}")
+# Mostramos el resultado
+print(f"Cantidad de personas menores de edad: {contador_menores}")
